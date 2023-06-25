@@ -37,17 +37,15 @@ class _DesktopScreenState extends State<DesktopScreen> {
                     flex: 1,
                   ),
                   Expanded(
-                      flex: 6,
-                      child: ClipRRect(
-                        clipBehavior: Clip.antiAlias,
-                        borderRadius: BorderRadius.circular(60),
-                        child: Card(
-                            clipBehavior: Clip.antiAlias,
-                            shadowColor: Colors.white.withOpacity(0),
-                            color: Colors.black.withOpacity(0.1),
-                            elevation: 5,
-                            child: TransparentBackgroundMain()),
-                      )),
+                    flex: 6,
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        MainTransparentTop(),
+                        MainTransparent(),
+                      ],
+                    ),
+                  ),
                   Spacer(
                     flex: 1,
                   ),
