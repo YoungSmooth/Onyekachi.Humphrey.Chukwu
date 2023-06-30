@@ -38,12 +38,16 @@ class _DesktopScreenState extends State<DesktopScreen> {
                   ),
                   Expanded(
                     flex: 6,
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        MainTransparentTop(),
-                        MainTransparent(),
-                      ],
+                    child: Container(
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        mainAxisSize: MainAxisSize.max,
+                        children: [
+                          MainTransparentTop(),
+                          Spacer(),
+                          MainTransparent(),
+                        ],
+                      ),
                     ),
                   ),
                   Spacer(
